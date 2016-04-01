@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body class='container col s12'>
+        <div id='app_title' class='row col s12 card-panel yellow black-text'>
+                <img class='circle col s2' src='http://cdn.osxdaily.com/wp-content/uploads/2015/09/notes-icon-ios-300x298.jpg'></img>
+                <h3 class='col s10'>ALPHA NOTE PAD V1.0</h3>
+        </div>
+        <div id='frame' class='row col s12 card-panel blue'>
+            <div id='notes' class='container col s4 white-text card-panel grey darken-4'>
+                <table> 
+                    <thead>
+                        <h5 style='font-weight:bold;'>NOTES</h5>
+                    </thead>
+                    <tbody id='note_table_body'>
+                        <tr>
+                            <a class="waves-effect waves-light btn-flat white-text col s10">
+                                <h6 id='0_note_title' class='truncate'>STUFF GOING IN AND OUT OF THE CLASS IS SO ANNOYING</h6>
+                            </a>
+                            <a class="waves-effect waves-light grey darken-2 btn col s2">
+                                <i class="large material-icons">check</i>
+                            </a>
+                        </tr>
+                        <tr>
+                            <a class="waves-effect waves-light btn-flat white-text col s10">
+                                <h6 id='0_note_title' class='truncate'>2nd ANNNOYING BUTTON</h6>
+                            </a>
+                            <a class="waves-effect waves-light grey darken-2 btn col s2">
+                                <i class="large material-icons">check</i>
+                            </a>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id='content' class='container col s8'>
+                <table class='striped orange darken-3 truncate'>
+                    <thead>
+                        <th class='col s7'>
+                                <h5 id='note_title_text' class='truncate'>1asde123425656789806545322345678901234567890123456789012345678901234567890</h5>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <th class='yellow black-text'>
+                            <p id='note_content_text' class='flow-text'>CONTENT adASDASDASD ASD ADA DASDASDA DAS DAS D ASD ASD A AFGDG ADG AG AF AS FASD<p>
+                        </th>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--
+        <div class="fixed-action-btn" style="bottom: 45px; right: 12%;">
+            <a class="btn-floating btn-large waves-effect waves-light red modal-trigger btn-tooltipped" href="#notemodal" data-position='top' data-delay='50' data-tooltip="Add A Note">
+                <i class="large material-icons">add</i>
+            </a>
+        </div>
+        -->
+        <script src="../scripts/notepad.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    </body>
+</html>
