@@ -8,7 +8,7 @@ $(document).ready(function () {
     var add_note_button = $('#add_note_btn');
 
     
-    console.log("Entered JS");
+    
     $('.tooltipped').tooltip({ delay : 40});
     note_title.attr('data-tooltip', note_title.html());
     
@@ -32,7 +32,6 @@ $(document).on('click','button.note_entries', function () {
     var note_content = $('#note_content_text');
     var focusNote= $($(this).html());
     
-    console.log("TRYING TO CHANGE VALUES");
     note_title.html( focusNote.html() );
     note_title.attr('data-tooltip', note_title.html());
     note_content.html(focusNote.attr('value'));
@@ -78,7 +77,6 @@ var addNote = {
         $('.modal-trigger').leanModal();
         
         $('#note_form_submit').click(function () {
-            console.log("Entered processing new data");
             var time = Date();
             var n_title = $('#note_form_title').val();
             var n_content = $('#note_form_content').val();
@@ -113,7 +111,6 @@ var addNote = {
 var arrangeNotes = {
     
     newNote : function(id, title, content, status){
-        console.log("Adding new note button with id:"+id);
         var note_buttons = $('#note_table_body');
         var btn_bg = 'grey darken-2';
         
